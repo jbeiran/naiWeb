@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases Particulares - Escuela Joaquin Sorolla</title>
+    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .highcontrast {
+            filter: invert(100%) contrast(150%);
+        }
+    </style>
+
+    <script>
+        function toggleHighContrast() {
+            var body = document.body;
+            body.classList.toggle("highcontrast");
+        }
+    </script>
+</head>
+
+<body>
+    <header class='main-header my-2 z-10'>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button id="menu-toggle" class="menu-icon">&#9776;</button> <!-- Este es el ícono del menú -->
+            <div class="links-container">
+                <ul id="nav-menu" class='navbar-nav navbar-nav-right mx-auto mb-2 mb-lg-0'>
+                    <li class='nav-item'>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropbtn">Cursos</a>
+                        <div class="dropdown-content">
+                            <a href="bachillerato.html">Bachillerato</a>
+                            <a href="masters.html">Masters</a>
+                            <a href="particulares.html">Clases Particulares</a>
+                            <a href="inscripciones.html">Inscripciones</a>
+                        </div>
+                    </li>
+                    <li class='nav-item'><a href="galeria.html">Galeria</a></li>
+                    <li class='nav-item'><a href="contacto.html">Contactar</a></li>
+                    <li class='nav-item'><a href="about.html">Nuestro centro</a></li>
+
+                    <div class="accessibility">
+                        <button onclick="toggleHighContrast()">High Contrast Mode</button>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="container">
+        <section id="intro" class="my-4">
+            <div class="section-title">
+                <h2 class="display-4">Clases Particulares</h2>
+                <p class="lead">Nuestras Clases Particulares ofrecen una formación personalizada y adaptada a las necesidades de cada alumno.</p>
+            </div>
+        </section>
+        <br>
+        <section id="programas" class="my-4">
+            <div class="section-title">
+                <h2 class="display-4">Materias Disponibles</h2>
+            </div>
+            <table id="programas-table" class="table table-striped">
+                <tr>
+                    <td>Arte Contemporáneo</td>
+                    <td>Estudia las tendencias y prácticas actuales en el arte contemporáneo a nivel global.</td>
+                </tr>
+                <tr>
+                    <td>Historia y Crítica del Arte</td>
+                    <td>Investiga y critica el arte a través de distintos periodos y estilos.</td>
+                </tr>
+                <tr>
+                    <td>Diseño y Tecnología</td>
+                    <td>Descubre cómo la tecnología puede ser utilizada para crear y mejorar obras de arte.</td>
+                </tr>
+                <tr>
+                    <td>Conservación de Arte</td>
+                    <td>Aprende cómo preservar y restaurar diversas formas de arte para las futuras generaciones.</td>
+                </tr>
+                <tr>
+                    <td>Pintura al óleo</td>
+                    <td>Aprende técnicas tradicionales y contemporáneas de pintura al óleo.</td>
+                </tr>
+                <tr>
+                    <td>Escultura</td>
+                    <td>Desarrolla tus habilidades tridimensionales y aprende a trabajar con una variedad de materiales de escultura.</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <section id="profesores" class="my-4">
+            <div class="section-title">
+                <h2 class="display-4">Profesores</h2>
+            </div>
+            <table id="profesores-table" class="table table-striped">
+                <tr>
+                    <td>Dr. José Ramírez</td>
+                    <td>Experto en arte contemporáneo, imparte clases particulares de Arte Contemporáneo.</td>
+                </tr>
+                <tr>
+                    <td>Dra. Silvia Torres</td>
+                    <td>Historiadora del arte con enfoque en el arte moderno, imparte clases particulares de Historia y Crítica del Arte.</td>
+                </tr>
+                <tr>
+                    <td>Dr. Javier Guzmán</td>
+                    <td>Profesional en diseño y tecnología, imparte clases particulares de Diseño y Tecnología.</td>
+                </tr>
+                <tr>
+                    <td>Dra. Carmen Morales</td>
+                    <td>Especialista en conservación de arte, imparte clases particulares de Conservación de Arte.</td>
+                </tr>
+                <tr>
+                    <td>Prof. Andrés Gómez</td>
+                    <td>Pintor profesional con amplia experiencia, imparte clases particulares de Pintura al óleo.</td>
+                </tr>
+                <tr>
+                    <td>Prof. Maria González</td>
+                    <td>Escultora reconocida, imparte clases particulares de Escultura.</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center">
+        <p>© 2023 Escuela de Arte, Joaquin Sorolla®</p>
+    </footer>
+
+    <script src="js/header_responsive.js"></script>
+</body>
+
+</html>

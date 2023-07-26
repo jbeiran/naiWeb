@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masters - Escuela Joaquin Sorolla</title>
+    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .highcontrast {
+            filter: invert(100%) contrast(150%);
+        }
+    </style>
+
+    <script>
+        function toggleHighContrast() {
+            var body = document.body;
+            body.classList.toggle("highcontrast");
+        }
+    </script>
+</head>
+
+<body>
+    <header class='main-header my-2 z-10'>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button id="menu-toggle" class="menu-icon">&#9776;</button> <!-- Este es el ícono del menú -->
+            <div class="links-container">
+                <ul id="nav-menu" class='navbar-nav navbar-nav-right mx-auto mb-2 mb-lg-0'>
+                    <li class='nav-item'>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropbtn">Cursos</a>
+                        <div class="dropdown-content">
+                            <a href="bachillerato.html">Bachillerato</a>
+                            <a href="masters.html">Masters</a>
+                            <a href="particulares.html">Clases Particulares</a>
+                            <a href="inscripciones.html">Inscripciones</a>
+                        </div>
+                    </li>
+                    <li class='nav-item'><a href="galeria.html">Galeria</a></li>
+                    <li class='nav-item'><a href="contacto.html">Contactar</a></li>
+                    <li class='nav-item'><a href="about.html">Nuestro centro</a></li>
+
+                    <div class="accessibility">
+                        <button onclick="toggleHighContrast()">High Contrast Mode</button>
+                    </div>
+                </ul>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <main class="container">
+        <section id="intro" class="my-4">
+            <div class="section-title">
+                <h2 class="display-4">Masters en Arte</h2>
+                <p class="lead">Nuestros Masters en Arte ofrecen una formación de vanguardia para los profesionales del arte que buscan llevar sus habilidades al siguiente nivel.</p>
+            </div>
+        </section>
+        <br>
+        <section id="programas" class="my-4">
+            <div class="section-title">
+                <h2 class="display-4">Asignaturas</h2>
+            </div>
+            <table id="programas-table" class="table table-striped">
+                <tr>
+                    <td>Master en Arte Contemporáneo</td>
+                    <td>Estudia las tendencias y prácticas actuales en el arte contemporáneo a nivel global.</td>
+                </tr>
+                <tr>
+                    <td>Master en Historia y Crítica del Arte</td>
+                    <td>Investiga y critica el arte a través de distintos periodos y estilos.</td>
+                </tr>
+                <tr>
+                    <td>Master en Diseño y Tecnología</td>
+                    <td>Descubre cómo la tecnología puede ser utilizada para crear y mejorar obras de arte.</td>
+                </tr>
+                <tr>
+                    <td>Master en Conservación de Arte</td>
+                    <td>Aprende cómo preservar y restaurar diversas formas de arte para las futuras generaciones.</td>
+                </tr>
+                <tr>
+                    <td>Master en Escultura Moderna</td>
+                    <td>Explora las técnicas, materiales y conceptos detrás de la escultura moderna.</td>
+                </tr>
+                <tr>
+                    <td>Master en Pintura del Renacimiento</td>
+                    <td>Estudia en profundidad la pintura del Renacimiento, desde sus orígenes hasta su decadencia.</td>
+                </tr>
+                <tr>
+                    <td>Master en Fotografía Digital</td>
+                    <td>Aprende las técnicas y conceptos clave de la fotografía digital y su aplicación en el arte.</td>
+                </tr>
+                <tr>
+                    <td>Master en Animación 3D</td>
+                    <td>Descubre las técnicas de animación 3D para la creación de arte y contenidos visuales.</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <section id="profesores" class="my-4">
+            <div class="section-title">
+                <h2 class="display-4">Profesores</h2>
+            </div>
+            <table id="profesores-table" class="table table-striped">
+                <tr>
+                    <td>Dr. José Ramírez</td>
+                    <td>Experto en arte contemporáneo, dirige el Master en Arte Contemporáneo.</td>
+                </tr>
+                <tr>
+                    <td>Dra. Silvia Torres</td>
+                    <td>Historiadora del arte con enfoque en el arte moderno, lidera el Master en Historia y Crítica del Arte.</td>
+                </tr>
+                <tr>
+                    <td>Dr. Javier Guzmán</td>
+                    <td>Profesional en diseño y tecnología, dirige el Master en Diseño y Tecnología.</td>
+                </tr>
+                <tr>
+                    <td>Dra. Carmen Morales</td>
+                    <td>Especialista en conservación de arte, lidera el Master en Conservación de Arte.</td>
+                </tr>
+                <tr>
+                    <td>Dr. Alberto Salazar</td>
+                    <td>Especialista en escultura moderna, dirige el Master en Escultura Moderna.</td>
+                </tr>
+                <tr>
+                    <td>Dra. Ana Serrano</td>
+                    <td>Historiadora del arte con especialidad en el Renacimiento, lidera el Master en Pintura del Renacimiento.</td>
+                </tr>
+                <tr>
+                    <td>Dr. Carlos Nuñez</td>
+                    <td>Fotógrafo profesional con amplia experiencia en digital, dirige el Master en Fotografía Digital.</td>
+                </tr>
+                <tr>
+                    <td>Dra. Laura Castillo</td>
+                    <td>Experta en animación 3D y arte digital, lidera el Master en Animación 3D.</td>
+                </tr>
+                <tr>
+                    <td>Dr. Fernando Linares</td>
+                    <td>Experto en arte abstracto, dirige el Master en Arte Abstracto.</td>
+                </tr>
+                <tr>
+                    <td>Dra. Isabel Paredes</td>
+                    <td>Especialista en arte medieval, lidera el Master en Arte Medieval.</td>
+                </tr>
+                <tr>
+                    <td>Dr. Leonardo Soto</td>
+                    <td>Conocedor de las técnicas de impresión en arte, dirige el Master en Técnicas de Impresión.</td>
+                </tr>
+                <tr>
+                    <td>Dra. Gabriela Aguirre</td>
+                    <td>Experta en arte digital, lidera el Master en Arte Digital.</td>
+                </tr>
+                <tr>
+                    <td>Dr. Pedro Velasco</td>
+                    <td>Especialista en arte pop, dirige el Master en Arte Pop.</td>
+                </tr>
+                <tr>
+                    <td>Dra. Rosa Mendoza</td>
+                    <td>Experta en arte latinoamericano, lidera el Master en Arte Latinoamericano.</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center">
+        <p>© 2023 Escuela de Arte, Joaquin Sorolla®</p>
+    </footer>
+
+    <script src="js/header_responsive.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachillerato - Escuela Joaquin Sorolla</title>
+    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .highcontrast {
+            filter: invert(100%) contrast(150%);
+        }
+    </style>
+
+    <script>
+        function toggleHighContrast() {
+            var body = document.body;
+            body.classList.toggle("highcontrast");
+        }
+    </script>
+</head>
+
+<body>
+    <header class='main-header my-2 z-10'>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button id="menu-toggle" class="menu-icon">&#9776;</button> <!-- Este es el ícono del menú -->
+            <div class="links-container">
+                <ul id="nav-menu" class='navbar-nav navbar-nav-right mx-auto mb-2 mb-lg-0'>
+                    <li class='nav-item'>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropbtn">Cursos</a>
+                        <div class="dropdown-content">
+                            <a href="bachillerato.html">Bachillerato</a>
+                            <a href="masters.html">Masters</a>
+                            <a href="particulares.html">Clases Particulares</a>
+                            <a href="inscripciones.html">Inscripciones</a>
+                        </div>
+                    </li>
+                    <li class='nav-item'><a href="galeria.html">Galeria</a></li>
+                    <li class='nav-item'><a href="contacto.html">Contactar</a></li>
+                    <li class='nav-item'><a href="about.html">Nuestro centro</a></li>
+
+                    <div class="accessibility">
+                        <button onclick="toggleHighContrast()">High Contrast Mode</button>
+                    </div>
+                </ul>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <main class="container">
+        <section id="intro" class="my-4">
+            <div class="section-title">
+                <h2 class="display-4">Bachillerato de Arte</h2>
+                <p class="lead">El Bachillerato de Arte ofrece una excelente oportunidad para que los estudiantes exploren su
+                    creatividad y perfeccionen sus habilidades artísticas.</p>
+            </div>
+        </section>
+        <br>
+        <section id="programas" class="my-4">
+            <div class="section-title">
+                <h2 class="display-4">Asignaturas</h2>
+            </div>
+            <table id="programas-table" class="table table-striped">
+                <tr>
+                    <td>Artes Visuales</td>
+                    <td>Estudia el impacto y la técnica de las artes visuales</td>
+                </tr>
+                <tr>
+                    <td>Historia del Arte</td>
+                    <td>Aprende acerca de la evolución del arte a lo largo de la historia</td>
+                </tr>
+                <tr>
+                    <td>Dibujo Técnico</td>
+                    <td>Desarrolla habilidades en el dibujo de precisión para representar formas tridimensionales</td>
+                </tr>
+                <tr>
+                    <td>Escultura</td>
+                    <td>Aprende sobre la teoría y la práctica de la creación de obras tridimensionales</td>
+                </tr>
+                <tr>
+                    <td>Fotografía</td>
+                    <td>Explora las técnicas de fotografía y su aplicación en el arte</td>
+                </tr>
+                <tr>
+                    <td>Pintura</td>
+                    <td>Adquiere habilidades en diversas técnicas de pintura, como óleo, acuarela y acrílico.</td>
+                </tr>
+                <tr>
+                    <td>Diseño Gráfico</td>
+                    <td>Desarrolla habilidades para comunicar ideas y conceptos a través de gráficos y diseño visual.</td>
+                </tr>
+                <tr>
+                    <td>Cerámica</td>
+                    <td>Descubre el arte de la cerámica, incluyendo técnicas de modelado, esmaltado y cocción.</td>
+                </tr>
+                <tr>
+                    <td>Grabado</td>
+                    <td>Aprende diversas técnicas de grabado y su aplicación en la creación de obras de arte.</td>
+                </tr>
+                <tr>
+                    <td>Arte Digital</td>
+                    <td>Explora el uso de tecnología digital en la creación y presentación de obras de arte.</td>
+                </tr>
+                <tr>
+                    <td>Anatomía Artística</td>
+                    <td>Estudia la anatomía humana desde una perspectiva artística para mejorar la representación del cuerpo humano.</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <section id="profesores" class="my-4">
+            <div class="section-title">
+                <h2 class="display-4">Profesores</h2>
+            </div>
+            <table id="profesores-table" class="table table-striped">
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>Profesor de Artes Visuales con más de 20 años de experiencia</td>
+                </tr>
+                <tr>
+                    <td>Maria García</td>
+                    <td>Experta en Historia del Arte con enfoque en el Renacimiento</td>
+                </tr>
+                <tr>
+                    <td>Carlos López</td>
+                    <td>Instructor de Dibujo Técnico con experiencia en arquitectura</td>
+                </tr>
+                <tr>
+                    <td>Isabel Rodríguez</td>
+                    <td>Escultora reconocida a nivel internacional, enseña la asignatura de Escultura</td>
+                </tr>
+                <tr>
+                    <td>Alfonso Gómez</td>
+                    <td>Fotógrafo profesional que ha trabajado para varias revistas de arte</td>
+                </tr>
+                <tr>
+                    <td>Laura Martínez</td>
+                    <td>Profesora de Pintura, especializada en técnicas de óleo y acuarela, ha expuesto su obra en varias galerías de arte.</td>
+                </tr>
+                <tr>
+                    <td>Roberto Silva</td>
+                    <td>Profesor de Diseño Gráfico con experiencia en el diseño de publicaciones, identidad corporativa y diseño web.</td>
+                </tr>
+                <tr>
+                    <td>Andrea Ruiz</td>
+                    <td>Artista de cerámica con múltiples premios a nivel nacional, imparte clases de Cerámica.</td>
+                </tr>
+                <tr>
+                    <td>Ernesto Vargas</td>
+                    <td>Grabador con exposiciones internacionales, enseña la asignatura de Grabado.</td>
+                </tr>
+                <tr>
+                    <td>Marta Fernández</td>
+                    <td>Artista digital innovadora, dirige el curso de Arte Digital.</td>
+                </tr>
+                <tr>
+                    <td>Leonardo Ríos</td>
+                    <td>Especialista en Anatomía Artística, con un enfoque en la representación realista del cuerpo humano.</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center">
+        <p>© 2023 Escuela de Arte, Joaquin Sorolla®</p>
+    </footer>
+
+    <script src="js/header_responsive.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Escuela Joaquin Sorolla</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Accessible High Contrast Mode */
+        .highcontrast {
+            filter: invert(100%) contrast(150%);
+        }
+    </style>
+
+    <script>
+        function toggleHighContrast() {
+            var body = document.body;
+            body.classList.toggle("highcontrast");
+        }
+    </script>
+
+</head>
+
+<body>
+    <header class='main-header my-2 z-10'>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button id="menu-toggle" class="menu-icon">&#9776;</button> <!-- Este es el ícono del menú -->
+            <div class="links-container">
+                <ul id="nav-menu" class='navbar-nav navbar-nav-right mx-auto mb-2 mb-lg-0'>
+                    <li class='nav-item'>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropbtn">Cursos</a>
+                        <div class="dropdown-content">
+                            <a href="bachillerato.html">Bachillerato</a>
+                            <a href="masters.html">Masters</a>
+                            <a href="particulares.html">Clases Particulares</a>
+                            <a href="inscripciones.html">Inscripciones</a>
+                        </div>
+                    </li>
+                    <li class='nav-item'><a href="galeria.html">Galeria</a></li>
+                    <li class='nav-item'><a href="contacto.html">Contactar</a></li>
+                    <li class='nav-item'><a href="about.html">Nuestro centro</a></li>
+
+                    <div class="accessibility">
+                        <button onclick="toggleHighContrast()">High Contrast Mode</button>
+                    </div>
+                </ul>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="informacion">
+            <h1 class="display-4">Escuela de Arte Joaquín Sorolla</h1>
+
+            <p>La Escuela de Arte Joaquín Sorolla es un emblema de excelencia y
+                creatividad en el mundo del arte. Fundada en 1975, nuestra escuela ha
+                sido un refugio para los artistas y un semillero de talento emergente.
+                Nuestro compromiso es con el arte, la innovación y la enseñanza de
+                calidad. La escuela es un espacio donde los estudiantes pueden
+                experimentar, aprender y crecer en un ambiente de respeto y
+                apreciación por el arte.</p>
+
+            <img src="img/centro/escuela.jpg" alt="Foto del centro" class="img-fluid">
+
+            <p>Desde pintura y escultura hasta diseño gráfico y fotografía, ofrecemos una amplia variedad de disciplinas
+                y técnicas. Nuestros profesores, todos ellos artistas activos y profesionales del campo, están
+                comprometidos a guiar a nuestros estudiantes en su camino hacia la expresión artística.</p>
+
+            <img src="img/centro/salainterna1.jpg" alt="Foto de la sala interna 1" class="img-fluid">
+
+            <p>Estamos orgullosos de nuestro legado y emocionados por lo que el futuro tiene reservado. Te invitamos a
+                unirte a nosotros y experimentar de primera mano la pasión, el compromiso y la belleza del mundo del
+                arte.</p>
+
+            <h1 class="display-4">Instalaciones del Centro</h1>
+
+            <p>Nuestro centro se extiende por un impresionante campus con espacios dedicados a cada disciplina
+                artística. Cada espacio está diseñado para fomentar la creatividad y proporcionar un entorno de
+                aprendizaje efectivo.</p>
+
+            <img src="img/centro/campus.jpg" alt="Foto del campus" class="img-fluid">
+
+            <p>Disponemos de aulas luminosas y espaciosas, ideales para la pintura y el dibujo. Los talleres de
+                escultura están equipados con todas las herramientas y materiales necesarios para trabajar con una
+                variedad de medios. Nuestros estudios de fotografía y diseño gráfico cuentan con la última tecnología y
+                software.</p>
+
+            <img src="img/centro/salainterna2.jpg" alt="Foto de la sala interna 2" class="img-fluid">
+
+            <p>Nuestra galería de arte en el campus alberga exposiciones regulares de trabajos de estudiantes y
+                profesores, así como de artistas locales e internacionales. Es un lugar de inspiración y de celebración
+                del arte en todas sus formas.</p>
+
+            <h1 class="display-4">Comunidad del Centro</h1>
+
+            <p>La Escuela de Arte Joaquín Sorolla no es solo un lugar para aprender, es una comunidad. Nos enorgullece
+                la diversidad y la inclusividad de nuestros estudiantes y profesores. Creemos que cada individuo aporta
+                algo único a nuestra comunidad, enriqueciéndonos a todos.</p>
+
+            <img src="img/centro/comunidad.jpg" alt="Foto de la comunidad" class="img-fluid">
+
+            <p>Organizamos regularmente eventos y talleres para nuestros estudiantes, profesores y personal. Estas
+                actividades no solo son divertidas, sino que también fomentan la colaboración y la construcción de una
+                red sólida dentro de nuestra comunidad.</p>
+
+            <img src="img/centro/evento1.jpg" alt="Foto de un evento" class="img-fluid">
+
+            <p>Nos enorgullece el ambiente de apoyo y la camaradería que se siente en nuestra escuela. Estamos
+                comprometidos a mantener este espíritu de comunidad y esperamos dar la bienvenida a nuevos miembros cada
+                año.</p>
+
+
+        </section>
+
+        <section id="joaquin-sorolla">
+            <h1 class="display-4">Joaquín Sorolla</h1>
+
+            <p>Joaquín Sorolla y Bastida, nacido en 1863 en Valencia, España, se destaca como uno de los más prominentes
+                y talentosos pintores de su generación. Reconocido ampliamente por su habilidad excepcional para
+                capturar la luz y el color en sus obras, Sorolla permanece en la memoria de la comunidad artística por
+                su profundo amor por su tierra natal y su dedicación incansable al arte.</p>
+
+            <img src="img/centro/autorretrato.jpg" alt="Retrato de Joaquín Sorolla" class="img-fluid">
+
+            <p>A lo largo de su vida, Sorolla demostró una versatilidad encomiable, experimentando con varios estilos y
+                técnicas, sin embargo, fue su maestría en el impresionismo lo que realmente distinguió su arte. Sus
+                retratos, paisajes marinos y escenas cotidianas, pintados con pinceladas sueltas y colores vibrantes,
+                son famosos por su realismo luminoso, vitalidad y detalle meticuloso.</p>
+
+            <img src="img/centro/cuadroSorolla1.jpg" alt="Cuadro de Joaquín Sorolla" class="img-fluid">
+
+            <p>Más allá de su contribución al mundo del arte, Sorolla fue un defensor de la educación y la cultura,
+                usando su arte para arrojar luz sobre los problemas sociales de su tiempo. Su serie "Visión de España",
+                que retrata la diversidad cultural y regional de España, es un testimonio de su compromiso con la
+                representación realista y la visibilidad cultural.</p>
+
+            <img src="img/centro/visionEspaña.jpg" alt="Cuadro de Vision de ESPAÑA, Joaquín Sorolla" class="img-fluid">
+
+            <p>En honor a su legado, la Escuela de Arte Joaquín Sorolla lleva su nombre, con el objetivo de inspirar a
+                generaciones de estudiantes a seguir sus propios caminos en el arte. Al igual que Sorolla, animamos a
+                nuestros estudiantes a explorar, experimentar y encontrar su propia voz artística, a la vez que les
+                inculcamos un aprecio por la tradición y la historia del arte.</p>
+
+        </section>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center">
+        <p>© 2023 Escuela de Arte, Joaquin Sorolla®</p>
+    </footer>
+
+    <script src="js/header_responsive.js"></script>
+</body>
+
+</html>

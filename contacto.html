@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Escuela de Arte Joaquín Sorolla</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .highcontrast {
+            filter: invert(100%) contrast(150%);
+        }
+    </style>
+
+    <script>
+        function toggleHighContrast() {
+            var body = document.body;
+            body.classList.toggle("highcontrast");
+        }
+    </script>
+</head>
+
+<body>
+    <header class='main-header my-2 z-10'>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button id="menu-toggle" class="menu-icon">&#9776;</button> <!-- Este es el ícono del menú -->
+            <div class="links-container">
+                <ul id="nav-menu" class='navbar-nav navbar-nav-right mx-auto mb-2 mb-lg-0'>
+                    <li class='nav-item'>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropbtn">Cursos</a>
+                        <div class="dropdown-content">
+                            <a href="bachillerato.html">Bachillerato</a>
+                            <a href="masters.html">Masters</a>
+                            <a href="particulares.html">Clases Particulares</a>
+                            <a href="inscripciones.html">Inscripciones</a>
+                        </div>
+                    </li>
+                    <li class='nav-item'><a href="galeria.html">Galeria</a></li>
+                    <li class='nav-item'><a href="contacto.html">Contactar</a></li>
+                    <li class='nav-item'><a href="about.html">Nuestro centro</a></li>
+
+                    <div class="accessibility">
+                        <button onclick="toggleHighContrast()">High Contrast Mode</button>
+                    </div>
+                </ul>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="contacto" class="my-4">
+            <h2 class="display-4">Contacto</h2>
+
+            <p>¿Tienes alguna pregunta o inquietud? No dudes en ponerte en contacto con nosotros a través del formulario
+                a continuación o a través de nuestros detalles de contacto.</p>
+
+            <form onsubmit="handleContactForm(event)">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <h3>Nuestros Detalles de Contacto</h3>
+            <ul class="contact-details">
+                <li>
+                    <i class="bi bi-envelope-fill"></i>
+                    Correo Electrónico: <a href="mailto:info@escuela-arte-sorolla.com">info@escuela-arte-sorolla.com</a>
+                </li>
+                <li>
+                    <i class="bi bi-telephone-fill"></i>
+                    Teléfono: <a href="tel:+34123456789">+34 123 456 789</a>
+                </li>
+                <li>
+                    <i class="bi bi-geo-fill"></i>
+                    Dirección: Tafira Alta, 35007, Gran Canaria, España
+                </li>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center">
+        <p>© 2023 Escuela de Arte, Joaquin Sorolla®</p>
+    </footer>
+
+    <script src="js/header_responsive.js"></script>
+</body>
+<script>
+    function handleContactForm(event) {
+        event.preventDefault();
+
+        var nombre = document.getElementById('nombre').value;
+        var correo = document.getElementById('correo').value;
+        var mensaje = document.getElementById('mensaje').value;
+
+        var contactoData = {
+            Nombre: nombre,
+            Correo: correo,
+            Mensaje: mensaje
+        };
+
+        console.log(contactoData);
+        alert('Información de contacto enviada. Por favor, verifica la consola del navegador para más detalles.');
+    }
+</script>
+
+</html>
